@@ -1,0 +1,6 @@
+@AuthenticationMicroservice.API_HostAddress = http://localhost:5192
+
+GET {{AuthenticationMicroservice.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

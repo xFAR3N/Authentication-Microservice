@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uoaAcr5qJ90=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dzaba\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\dzaba\\.nuget\\packages\\microsoft.openapi\\3.10.2\\microsoft.openapi.3.10.2.nupkg.sha512",
+    "C:\\Users\\dzaba\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.2.3\\swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

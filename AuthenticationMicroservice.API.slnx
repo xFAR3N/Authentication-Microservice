@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AuthenticationMicroservice.API/AuthenticationMicroservice.API.csproj" />
+  <Project Path="AuthenticationMicroservice.Application/AuthenticationMicroservice.Application.csproj" />
+  <Project Path="AuthenticationMicroservice.Domain/AuthenticationMicroservice.Domain.csproj" />
+  <Project Path="AuthenticationMicroservice.Infrastructure/AuthenticationMicroservice.Infrastructure.csproj" />
+</Solution>
