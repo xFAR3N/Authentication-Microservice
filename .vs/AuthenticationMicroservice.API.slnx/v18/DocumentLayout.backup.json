@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\exceptions\\invalidcredentialexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\exceptions\\invalidcredentialexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\interfaces\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\interfaces\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073F2531-11E1-A03C-4336-1036B87530E5}|AuthenticationMicroservice.Domain\\AuthenticationMicroservice.Domain.csproj|solutionrelative:authenticationmicroservice.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,109 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InvalidCredentialException.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Exceptions\\InvalidCredentialException.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Exceptions\\InvalidCredentialException.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Exceptions\\InvalidCredentialException.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Exceptions\\InvalidCredentialException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T21:20:15.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserAlreadyExistsException.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Exceptions\\UserAlreadyExistsException.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Exceptions\\UserAlreadyExistsException.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Exceptions\\UserAlreadyExistsException.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Exceptions\\UserAlreadyExistsException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T21:19:41.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DomainException.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Exceptions\\DomainException.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Exceptions\\DomainException.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Exceptions\\DomainException.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Exceptions\\DomainException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T21:18:56.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T21:15:55.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRefreshTokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Interfaces\\IRefreshTokenRepository.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Interfaces\\IRefreshTokenRepository.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Interfaces\\IRefreshTokenRepository.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Interfaces\\IRefreshTokenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T21:15:25.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T21:01:56.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Entities\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Entities\\RefreshToken.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Entities\\RefreshToken.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Entities\\RefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T20:54:37.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T20:49:14.286Z"
             }
           ]
         }

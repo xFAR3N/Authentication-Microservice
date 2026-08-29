@@ -3,4 +3,5 @@
   <Project Path="AuthenticationMicroservice.Application/AuthenticationMicroservice.Application.csproj" />
   <Project Path="AuthenticationMicroservice.Domain/AuthenticationMicroservice.Domain.csproj" />
   <Project Path="AuthenticationMicroservice.Infrastructure/AuthenticationMicroservice.Infrastructure.csproj" />
+  <Project Path="AuthenticationMicroservice.UnitTests/AuthenticationMicroservice.UnitTests.csproj" Id="d68e3717-69a4-4f54-b78d-c7650f9b5570" />
 </Solution>
