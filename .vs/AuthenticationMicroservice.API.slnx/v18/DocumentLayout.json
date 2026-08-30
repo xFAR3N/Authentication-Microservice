@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D68E3717-69A4-4F54-B78D-C7650F9B5570}|AuthenticationMicroservice.UnitTests\\AuthenticationMicroservice.UnitTests.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E3717-69A4-4F54-B78D-C7650F9B5570}|AuthenticationMicroservice.UnitTests\\AuthenticationMicroservice.UnitTests.csproj|solutionrelative:authenticationmicroservice.unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.UnitTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.UnitTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.UnitTests\\UnitTest1.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.UnitTests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T21:31:01.442Z",
+              "EditorCaption": ""
             }
           ]
         }

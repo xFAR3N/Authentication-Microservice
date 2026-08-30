@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthenticationMicroservice.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f9bae6ae61ecc6b8c10e330fc72f44e08a00f69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de12b05a12f44f9f80de3cabbd1a2a798888d679")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthenticationMicroservice.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthenticationMicroservice.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
