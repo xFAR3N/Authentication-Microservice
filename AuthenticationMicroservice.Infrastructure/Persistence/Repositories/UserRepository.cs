@@ -19,6 +19,11 @@ namespace AuthenticationMicroservice.Infrastructure.Persistence.Repositories
             return await context.Users.AsNoTracking().AnyAsync(u => u.Email == email, ct);
         }
 
+        public async Task<bool> ExistsByUserNameAsync(string username, CancellationToken ct = default)
+        {
+            return await context.Users.AsNoTracking().AnyAsync(u => u.UserName == username, ct);
+        }
+
         public async Task<User?> GetByEmailAsync(string email, CancellationToken ct = default)
         {
             return await context.Users.FirstOrDefaultAsync(u => u.Email == email, ct);

@@ -13,6 +13,8 @@ namespace AuthenticationMicroservice.Domain.Interfaces
 
         Task<bool> ExistsByEmailAsync(string email, CancellationToken ct = default);
 
+        Task<bool> ExistsByUserNameAsync(string username, CancellationToken ct = default);
+
         Task AddAsync(User user, CancellationToken ct = default);
 
         void Update(User user);

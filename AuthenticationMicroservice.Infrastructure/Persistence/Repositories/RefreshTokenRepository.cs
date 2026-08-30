@@ -14,6 +14,11 @@ namespace AuthenticationMicroservice.Infrastructure.Persistence.Repositories
             await context.RefreshTokens.AddAsync(refreshToken, ct);
         }
 
+        public async Task<RefreshToken?> GetByTokenAsync(string token, CancellationToken ct = default)
+        {
+            return await context.RefreshTokens.FirstOrDefaultAsync(rt => rt.Token == token, ct);
+        }
+
         public async Task<RefreshToken?> GetByTokenWithUserAsync(string token, CancellationToken ct = default)
         {
             return await context.RefreshTokens.Include(rt => rt.User).FirstOrDefaultAsync(rt => rt.Token == token, ct);

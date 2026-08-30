@@ -17,6 +17,7 @@ namespace AuthenticationMicroservice.Infrastructure
             services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }

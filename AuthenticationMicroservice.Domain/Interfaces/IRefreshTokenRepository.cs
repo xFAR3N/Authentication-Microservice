@@ -12,5 +12,7 @@ namespace AuthenticationMicroservice.Domain.Interfaces
         Task AddAsync(RefreshToken refreshToken, CancellationToken ct = default);
 
         void Update(RefreshToken refreshToken);
+
+        Task<RefreshToken?> GetByTokenAsync(string token, CancellationToken ct = default);
     }
 }
