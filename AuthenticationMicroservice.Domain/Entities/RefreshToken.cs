@@ -10,11 +10,11 @@ namespace AuthenticationMicroservice.Domain.Entities
 
         public DateTime ExpiresAtUtc { get; set; }
 
-        public DateTime CreateAtUtc { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
 
-        public string? CreateByIp { get; set; }
+        public string? CreatedByIp { get; set; }
 
-        public DateTime? RevokedAtUc { get; set; }
+        public DateTime? RevokedAtUtc { get; set; }
 
         public string? RevokedByIp { get; set; }
 
@@ -22,7 +22,7 @@ namespace AuthenticationMicroservice.Domain.Entities
 
         public bool IsExpired => DateTime.UtcNow >= ExpiresAtUtc;
 
-        public bool IsRevoked => RevokedAtUc != null;
+        public bool IsRevoked => RevokedAtUtc != null;
 
         public bool IsActive => !IsRevoked && !IsExpired;
 

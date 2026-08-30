@@ -11,11 +11,15 @@ namespace AuthenticationMicroservice.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<RefreshToken> builder)
         {
-            builder.ToTable("efreshTokens");
+            builder.ToTable("RefreshTokens");
 
             builder.HasKey(rt => rt.Id);
 
-            builder.HasIndex(rt => rt.Token);
+            builder.HasIndex(rt => rt.Token)
+                .IsUnique();
+
+            builder.Property(rt => rt.Token)
+                .HasMaxLength(500);
 
             builder.HasOne(rt => rt.User)
                 .WithMany(u => u.RefreshTokens)

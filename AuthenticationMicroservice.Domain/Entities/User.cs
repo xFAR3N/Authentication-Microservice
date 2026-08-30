@@ -18,7 +18,7 @@ namespace AuthenticationMicroservice.Domain.Entities
 
         public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
 
-        public DateTime? UpdateAtUtc { get; set; }
+        public DateTime? UpdatedAtUtc { get; set; }
 
         public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
     }

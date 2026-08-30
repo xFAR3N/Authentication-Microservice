@@ -15,13 +15,22 @@ namespace AuthenticationMicroservice.Infrastructure.Persistence.Configurations
 
             builder.HasKey(u => u.Id);
 
-            builder.HasIndex(u => u.Email);
+            builder.HasIndex(u => u.Email)
+                .IsUnique();
 
-            builder.Property(u => u.PasswordHash).IsRequired();
+            builder.Property(u => u.Email)
+                .HasMaxLength(256);
 
-            builder.Property(u => u.Role).IsRequired();
+            builder.Property(u => u.PasswordHash)
+                .IsRequired();
 
-            builder.Property(u => u.UserName).IsRequired();
+            builder.Property(u => u.Role)
+                .HasMaxLength(50)
+                .IsRequired();
+
+            builder.Property(u => u.UserName)
+                .HasMaxLength(100)
+                .IsRequired();
         }
     }
 }

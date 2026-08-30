@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Migrations\\20260830085431_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthenticationMicroservice.Infrastructure\\Migrations\\20260830085431_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|solutionrelative:authenticationmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Migrations\\20260830084718_InitDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthenticationMicroservice.Infrastructure\\Migrations\\20260830084718_InitDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.infrastructure\\persistence\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|solutionrelative:authenticationmicroservice.infrastructure\\persistence\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|solutionrelative:authenticationmicroservice.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|solutionrelative:authenticationmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +47,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20260830085431_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Migrations\\20260830085431_InitialCreate.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Infrastructure\\Migrations\\20260830085431_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Migrations\\20260830085431_InitialCreate.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.Infrastructure\\Migrations\\20260830085431_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T08:54:31.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260830084718_InitDb.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Migrations\\20260830084718_InitDb.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Infrastructure\\Migrations\\20260830084718_InitDb.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Migrations\\20260830084718_InitDb.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.Infrastructure\\Migrations\\20260830084718_InitDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T08:47:18.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\appsettings.json",
+              "RelativeToolTip": "AuthenticationMicroservice.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-30T08:45:26.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\Program.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.API\\Program.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\Program.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T08:44:48.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T08:42:46.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Persistence\\AuthDbContext.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Infrastructure\\Persistence\\AuthDbContext.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Persistence\\AuthDbContext.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.Infrastructure\\Persistence\\AuthDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T08:41:22.139Z",
+              "EditorCaption": ""
             }
           ]
         }
