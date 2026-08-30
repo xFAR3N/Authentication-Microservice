@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6JFTKaSKkAI=",
+  "dgSpecHash": "lNodYvR0Vrw=",
   "success": true,
   "projectFilePath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dzaba\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\dzaba\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
     "C:\\Users\\dzaba\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
+    "C:\\Users\\dzaba\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\dzaba\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dzaba\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
     "C:\\Users\\dzaba\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",

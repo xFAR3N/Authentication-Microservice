@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nYoAlLz9qW0=",
+  "dgSpecHash": "/Tp0qEkkUcw=",
   "success": true,
   "projectFilePath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\AuthenticationMicroservice.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dzaba\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
+  ],
   "logs": []
 }
