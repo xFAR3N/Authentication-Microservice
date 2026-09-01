@@ -568,6 +568,14 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.11, )"
             }
           },
           "imports": [
