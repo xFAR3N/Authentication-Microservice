@@ -1,5 +1,4 @@
 ﻿using AuthenticationMicroservice.Application.Common.Interfaces;
-using AuthenticationMicroservice.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,14 +7,14 @@ namespace AuthenticationMicroservice.Infrastructure.Security
 {
     internal class PasswordHasherService : IPasswordHasherService
     {
-        public string HashPassword(User user, string plainPassword)
+        public string HashPassword(string plainPassword)
         {
-            throw new NotImplementedException();
+            return BCrypt.Net.BCrypt.EnhancedHashPassword(plainPassword, workFactor: 12);
         }
 
-        public bool VerifyPassword(User user, string hashedPassword, string providedPassword)
+        public bool VerifyPassword(string hashedPassword, string providedPassword)
         {
-            throw new NotImplementedException();
+            return BCrypt.Net.BCrypt.EnhancedVerify(providedPassword, hashedPassword);
         }
     }
 }
