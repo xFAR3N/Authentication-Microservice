@@ -8,6 +8,6 @@ namespace AuthenticationMicroservice.Application.Common.Interfaces
     {
         string HashPassword(string plainPassword);
 
-        bool VerifyPassword(string hashedPassword, string providedPassword);
+        bool VerifyPassword(string providedPassword, string hashedPassword);
     }
 }

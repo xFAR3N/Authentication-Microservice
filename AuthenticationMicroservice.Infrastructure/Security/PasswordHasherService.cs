@@ -12,7 +12,7 @@ namespace AuthenticationMicroservice.Infrastructure.Security
             return BCrypt.Net.BCrypt.EnhancedHashPassword(plainPassword, workFactor: 12);
         }
 
-        public bool VerifyPassword(string hashedPassword, string providedPassword)
+        public bool VerifyPassword(string providedPassword, string hashedPassword)
         {
             return BCrypt.Net.BCrypt.EnhancedVerify(providedPassword, hashedPassword);
         }

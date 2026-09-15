@@ -34,7 +34,8 @@ namespace AuthenticationMicroservice.Application.Services
 
             if (!validationResult.IsValid)
             {
-                throw new ValidationException(validationResult.Errors.ToString() ?? "Error data validation.");
+                var errors = string.Join("; ", validationResult.Errors.Select(e => e.ErrorMessage));
+                throw new ValidationException(errors);
             }
 
             var user = await _userRepo.GetByEmailAsync(request.Email, ct);
@@ -68,7 +69,8 @@ namespace AuthenticationMicroservice.Application.Services
 
             if (!validationResult.IsValid)
             {
-                throw new ValidationException(validationResult.Errors.ToString() ?? "Error data validation.");
+                var errors = string.Join("; ", validationResult.Errors.Select(e => e.ErrorMessage));
+                throw new ValidationException(errors);
             }
 
             var existingToken = await _tokeRepo.GetByTokenWithUserAsync(request.RefreshToken, ct);
@@ -105,7 +107,8 @@ namespace AuthenticationMicroservice.Application.Services
 
             if (!validationResult.IsValid)
             {
-                throw new ValidationException(validationResult.Errors.ToString() ?? "Error data validation.");
+                var errors = string.Join("; ", validationResult.Errors.Select(e => e.ErrorMessage));
+                throw new ValidationException(errors);
             }
 
             if(await _userRepo.ExistsByEmailAsync(request.Email, ct))
