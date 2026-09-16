@@ -58,5 +58,7 @@ namespace AuthenticationMicroservice.Infrastructure.Authentication
                 CreatedByIp = ipAddress,
             };
         }
+
+        int AccesstokenExpirationSeconds => (int)TimeSpan.FromMinutes(_jwtOptions.AccessTokenExpirationMinutes).TotalSeconds;
     }
 }

@@ -11,14 +11,23 @@ using ValidationException = AuthenticationMicroservice.Application.Common.Except
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Extensions.Options;
 
 namespace AuthenticationMicroservice.Application.Services
 {
-    internal class AuthService(IUserRepository _userRepo, IRefreshTokenRepository _tokeRepo, IUnitOfWork _unitOfWork, IJwtTokenGenerator _tokeGenerator, IPasswordHasherService _passwordHasher, IValidator<RegisterRequest> _registerValidator, IValidator<LoginRequest> _loginValidator, IValidator<RefreshTokenRequest> _refreshTokenValidator) : IAuthService
+    internal class AuthService(
+        IUserRepository userRepository,
+        IRefreshTokenRepository tokenRepository,
+        IUnitOfWork unitOfWork,
+        IJwtTokenGenerator jwtTokenGenerator, 
+        IPasswordHasherService passwordHasherService, 
+        IValidator<RegisterRequest> registerRequestValidator, 
+        IValidator<LoginRequest> loginRequestValidator, 
+        IValidator<RefreshTokenRequest> refreshTokenRequestValidator) : IAuthService
     {
         public async Task<UserProfileResponse> GetCurrentUserProfileAsync(Guid userId, CancellationToken ct = default)
         {
-            var user = await _userRepo.GetByIdAsync(userId, ct);
+            var user = await userRepository.GetByIdAsync(userId, ct);
 
             if(user == null || !user.IsActive)
             {
@@ -30,7 +39,7 @@ namespace AuthenticationMicroservice.Application.Services
 
         public async Task<AuthTokenResponse> LoginAsync(LoginRequest request, string? ipAddress, CancellationToken ct = default)
         {
-            var validationResult = await _loginValidator.ValidateAsync(request, ct);
+            var validationResult = await loginRequestValidator.ValidateAsync(request, ct);
 
             if (!validationResult.IsValid)
             {
@@ -38,34 +47,36 @@ namespace AuthenticationMicroservice.Application.Services
                 throw new ValidationException(errors);
             }
 
-            var user = await _userRepo.GetByEmailAsync(request.Email, ct);
+            var user = await userRepository.GetByEmailAsync(request.Email, ct);
 
             if (user == null || !user.IsActive)
             {
                 throw new InvalidCredentialException("Nieprawidłowy adres email lub hasło.");
             }
 
-            if (!_passwordHasher.VerifyPassword(request.Password, user.PasswordHash))
+            if (!passwordHasherService.VerifyPassword(request.Password, user.PasswordHash))
             {
                 throw new InvalidCredentialException("Nieprawidłowy adres email lub hasło.");
             }
 
-            var accessToken = _tokeGenerator.GenerateAccessToken(user);
+            var accessToken = jwtTokenGenerator.GenerateAccessToken(user);
 
-            var refreshToken = _tokeGenerator.GenerateRefreshToken(ipAddress);
+            var expiresIn = jwtTokenGenerator.AccessTokenExpirationSeconds;
+
+            var refreshToken = jwtTokenGenerator.GenerateRefreshToken(ipAddress);
 
             refreshToken.UserId = user.Id;
 
-            await _tokeRepo.AddAsync(refreshToken, ct);
+            await tokenRepository.AddAsync(refreshToken, ct);
 
-            await _unitOfWork.CommitAsync(ct);
+            await unitOfWork.CommitAsync(ct);
 
-            return new AuthTokenResponse(accessToken, 900, refreshToken.Token);
+            return new AuthTokenResponse(accessToken, expiresIn, refreshToken.Token);
         }
 
         public async Task<AuthTokenResponse> RefreshTokenAsync(RefreshTokenRequest request, string? ipAddress, CancellationToken ct = default)
         {
-            var validationResult = await _refreshTokenValidator.ValidateAsync(request, ct);
+            var validationResult = await refreshTokenRequestValidator.ValidateAsync(request, ct);
 
             if (!validationResult.IsValid)
             {
@@ -73,14 +84,14 @@ namespace AuthenticationMicroservice.Application.Services
                 throw new ValidationException(errors);
             }
 
-            var existingToken = await _tokeRepo.GetByTokenWithUserAsync(request.RefreshToken, ct);
+            var existingToken = await tokenRepository.GetByTokenWithUserAsync(request.RefreshToken, ct);
 
             if (existingToken == null || !existingToken.IsActive || !existingToken.User.IsActive)
             {
                 throw new UnauthorizedException("Nieprawidłowy lub wygasły token odświeżający.");
             }
 
-            var newRefreshToken = _tokeGenerator.GenerateRefreshToken(ipAddress);
+            var newRefreshToken = jwtTokenGenerator.GenerateRefreshToken(ipAddress);
 
             newRefreshToken.UserId = existingToken.UserId;
 
@@ -90,20 +101,20 @@ namespace AuthenticationMicroservice.Application.Services
 
             existingToken.ReplacedByToken = newRefreshToken.Token;
 
-            _tokeRepo.Update(existingToken);
+            tokenRepository.Update(existingToken);
 
-            await _tokeRepo.AddAsync(newRefreshToken, ct);
+            await tokenRepository.AddAsync(newRefreshToken, ct);
 
-            var newAccessToken = _tokeGenerator.GenerateAccessToken(existingToken.User);
+            var newAccessToken = jwtTokenGenerator.GenerateAccessToken(existingToken.User);
 
-            await _unitOfWork.CommitAsync(ct);
+            await unitOfWork.CommitAsync(ct);
 
             return new AuthTokenResponse(newAccessToken, 900, newRefreshToken.Token);
         }
 
         public async Task<UserRegisteredResponse> RegisterAsync(RegisterRequest request, CancellationToken ct = default)
         {
-            var validationResult = await _registerValidator.ValidateAsync(request, ct);
+            var validationResult = await registerRequestValidator.ValidateAsync(request, ct);
 
             if (!validationResult.IsValid)
             {
@@ -111,17 +122,17 @@ namespace AuthenticationMicroservice.Application.Services
                 throw new ValidationException(errors);
             }
 
-            if(await _userRepo.ExistsByEmailAsync(request.Email, ct))
+            if(await userRepository.ExistsByEmailAsync(request.Email, ct))
             {
                 throw new UserAlreadyExistsException($"Email: {request.Email} already taken");
             }
 
-            if(await _userRepo.ExistsByUserNameAsync(request.UserName, ct))
+            if(await userRepository.ExistsByUserNameAsync(request.UserName, ct))
             {
                 throw new UserAlreadyExistsException($"{request.UserName} is already taken");
             }
 
-            var passwordHash = _passwordHasher.HashPassword(request.Password);
+            var passwordHash = passwordHasherService.HashPassword(request.Password);
 
             var user = new User
             {
@@ -134,25 +145,25 @@ namespace AuthenticationMicroservice.Application.Services
                 CreatedAtUtc = DateTime.UtcNow,
             };
 
-            await _userRepo.AddAsync(user, ct);
+            await userRepository.AddAsync(user, ct);
 
-            await _unitOfWork.CommitAsync(ct);
+            await unitOfWork.CommitAsync(ct);
 
             return user.ToRegisteredResponse();
         }
 
         public async Task RevokeTokenAsync(RevokeTokenRequest request, string? ipAddress, CancellationToken ct = default)
         {
-            var token = await _tokeRepo.GetByTokenAsync(request.RefreshToken, ct);
+            var token = await tokenRepository.GetByTokenAsync(request.RefreshToken, ct);
 
             if(token != null && token.IsActive)
             {
                 token.RevokedAtUtc = DateTime.UtcNow;
                 token.RevokedByIp = ipAddress;
 
-                _tokeRepo.Update(token);
+                tokenRepository.Update(token);
 
-                await _unitOfWork.CommitAsync(ct);
+                await unitOfWork.CommitAsync(ct);
             }
         }
     }

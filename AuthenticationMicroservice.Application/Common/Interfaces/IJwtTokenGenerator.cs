@@ -10,5 +10,7 @@ namespace AuthenticationMicroservice.Application.Common.Interfaces
         string GenerateAccessToken(User user);
 
         RefreshToken GenerateRefreshToken(string? ipAddress);
+
+        int AccessTokenExpirationSeconds { get; }
     }
 }
