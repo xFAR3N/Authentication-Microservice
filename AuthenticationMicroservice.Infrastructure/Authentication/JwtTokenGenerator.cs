@@ -59,6 +59,6 @@ namespace AuthenticationMicroservice.Infrastructure.Authentication
             };
         }
 
-        int AccesstokenExpirationSeconds => (int)TimeSpan.FromMinutes(_jwtOptions.AccessTokenExpirationMinutes).TotalSeconds;
+        int IJwtTokenGenerator.AccessTokenExpirationSeconds => (int)TimeSpan.FromMinutes(_jwtOptions.AccessTokenExpirationMinutes).TotalSeconds;
     }
 }

@@ -7,6 +7,7 @@ using AuthenticationMicroservice.Domain.Entities;
 using AuthenticationMicroservice.Domain.Exceptions;
 using AuthenticationMicroservice.Domain.Interfaces;
 using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using NSubstitute;
 using System;
 using System.Threading;
@@ -22,6 +23,7 @@ public class AuthServiceTests
     private readonly IUnitOfWork _unitOfWork = Substitute.For<IUnitOfWork>();
     private readonly IPasswordHasherService _passwordHasher = Substitute.For<IPasswordHasherService>();
     private readonly IJwtTokenGenerator _jwtTokenGenerator = Substitute.For<IJwtTokenGenerator>();
+    private readonly ILogger<AuthService> _logger = Substitute.For<ILogger<AuthService>>();
 
     private readonly RegisterRequestValidator _registerValidator = new();
     private readonly LoginRequestValidator _loginValidator = new();
@@ -39,7 +41,8 @@ public class AuthServiceTests
             _passwordHasher,
             _registerValidator,
             _loginValidator,
-            _refreshTokenValidator
+            _refreshTokenValidator,
+            _logger
         );
     }
 
