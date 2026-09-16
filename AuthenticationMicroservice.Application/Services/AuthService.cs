@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging;
 
 namespace AuthenticationMicroservice.Application.Services
 {
@@ -23,7 +24,8 @@ namespace AuthenticationMicroservice.Application.Services
         IPasswordHasherService passwordHasherService, 
         IValidator<RegisterRequest> registerRequestValidator, 
         IValidator<LoginRequest> loginRequestValidator, 
-        IValidator<RefreshTokenRequest> refreshTokenRequestValidator) : IAuthService
+        IValidator<RefreshTokenRequest> refreshTokenRequestValidator,
+        ILogger<AuthService> logger) : IAuthService
     {
         public async Task<UserProfileResponse> GetCurrentUserProfileAsync(Guid userId, CancellationToken ct = default)
         {
@@ -44,6 +46,7 @@ namespace AuthenticationMicroservice.Application.Services
             if (!validationResult.IsValid)
             {
                 var errors = string.Join("; ", validationResult.Errors.Select(e => e.ErrorMessage));
+                logger.LogWarning("Failed login attempt for email {Email} from IP {IpAddress}.", request.Email, ipAddress);
                 throw new ValidationException(errors);
             }
 
@@ -51,12 +54,14 @@ namespace AuthenticationMicroservice.Application.Services
 
             if (user == null || !user.IsActive)
             {
-                throw new InvalidCredentialException("Nieprawidłowy adres email lub hasło.");
+                logger.LogWarning("Failed login attempt for email {Email} from IP {IpAddress}.", request.Email, ipAddress);
+                throw new InvalidCredentialException("Invalid email or password.");
             }
 
             if (!passwordHasherService.VerifyPassword(request.Password, user.PasswordHash))
             {
-                throw new InvalidCredentialException("Nieprawidłowy adres email lub hasło.");
+                logger.LogWarning("Failed login attempt for email {Email} from IP {IpAddress}.", request.Email, ipAddress);
+                throw new InvalidCredentialException("Invalid email or password.");
             }
 
             var accessToken = jwtTokenGenerator.GenerateAccessToken(user);
@@ -71,6 +76,8 @@ namespace AuthenticationMicroservice.Application.Services
 
             await unitOfWork.CommitAsync(ct);
 
+            logger.LogInformation("User {UserId} logged in successfully from IP {IpAddress}.", user.Id, ipAddress);
+
             return new AuthTokenResponse(accessToken, expiresIn, refreshToken.Token);
         }
 
@@ -81,6 +88,7 @@ namespace AuthenticationMicroservice.Application.Services
             if (!validationResult.IsValid)
             {
                 var errors = string.Join("; ", validationResult.Errors.Select(e => e.ErrorMessage));
+                logger.LogWarning("Potential token reuse or invalid token attempt from IP {IpAddress}.", ipAddress);
                 throw new ValidationException(errors);
             }
 
@@ -88,7 +96,8 @@ namespace AuthenticationMicroservice.Application.Services
 
             if (existingToken == null || !existingToken.IsActive || !existingToken.User.IsActive)
             {
-                throw new UnauthorizedException("Nieprawidłowy lub wygasły token odświeżający.");
+                logger.LogWarning("Potential token reuse or invalid token attempt from IP {IpAddress}.", ipAddress);
+                throw new UnauthorizedException("Invalid or expired refresh token.");
             }
 
             var newRefreshToken = jwtTokenGenerator.GenerateRefreshToken(ipAddress);
@@ -108,6 +117,8 @@ namespace AuthenticationMicroservice.Application.Services
             var newAccessToken = jwtTokenGenerator.GenerateAccessToken(existingToken.User);
 
             await unitOfWork.CommitAsync(ct);
+
+            logger.LogInformation("Refresh token rotated successfully for user {UserId} from IP {IpAddress}.", newRefreshToken.UserId, ipAddress);
 
             return new AuthTokenResponse(newAccessToken, 900, newRefreshToken.Token);
         }
@@ -149,6 +160,8 @@ namespace AuthenticationMicroservice.Application.Services
 
             await unitOfWork.CommitAsync(ct);
 
+            logger.LogInformation("User {UserId} successfully registered with email {Email}.", user.Id, user.Email);
+
             return user.ToRegisteredResponse();
         }
 
@@ -162,6 +175,8 @@ namespace AuthenticationMicroservice.Application.Services
                 token.RevokedByIp = ipAddress;
 
                 tokenRepository.Update(token);
+
+                logger.LogInformation("Refresh token revoked from IP {IpAddress}.", ipAddress);
 
                 await unitOfWork.CommitAsync(ct);
             }
