@@ -19,9 +19,12 @@ namespace AuthenticationMicroservice.Application.Validators
                 .MaximumLength(256).WithMessage("Email address cannot be longer than 256 characters.");
 
             RuleFor(rr => rr.Password)
+                .NotEmpty().WithMessage("Password is required.")
+                .MinimumLength(8).WithMessage("Password must be at least 8 characters long.")
+                .MaximumLength(128).WithMessage("Password cannot exceed 128 characters")
                 .Matches(@"[A-Z]").WithMessage("Password must contain at least one capitol letter")
                 .Matches(@"[0-9]").WithMessage("Password must contain at least one digit")
-                .Matches(@"[\!\?\*\.]").WithMessage("Password must contain special character");
+                .Matches(@"[^a-zA-Z0-9]").WithMessage("Password must contain special character");
 
             RuleFor(rr => rr.UserName)
                 .NotEmpty().WithMessage("Username cannot be empty")

@@ -24,7 +24,7 @@ namespace AuthenticationMicroservice.API.Middlewares
             {
                 Status = statusCode,
                 Title = title,
-                Detail = exception.Message,
+                Detail = "An unexpected error occured. Please contact support",
                 Instance = httpContext.Request.Path,
             };
 

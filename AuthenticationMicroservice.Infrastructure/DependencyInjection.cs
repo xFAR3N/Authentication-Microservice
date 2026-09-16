@@ -28,7 +28,10 @@ namespace AuthenticationMicroservice.Infrastructure
 
             services.AddScoped<IPasswordHasherService, PasswordHasherService>();
 
-            services.Configure<JwtOptions>(options => configuration.GetSection("Jwt").Bind(options));
+            services.AddOptions<JwtOptions>()
+                .Bind(configuration.GetSection("Jwt"))
+                .ValidateDataAnnotations()
+                .ValidateOnStart();
 
             return services;
         }

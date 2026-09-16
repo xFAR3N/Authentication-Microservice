@@ -3,16 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDE1BC07-9062-D43B-67CE-6C4310F85FEB}|AuthenticationMicroservice.Application\\AuthenticationMicroservice.Application.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.application\\validators\\loginrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDE1BC07-9062-D43B-67CE-6C4310F85FEB}|AuthenticationMicroservice.Application\\AuthenticationMicroservice.Application.csproj|solutionrelative:authenticationmicroservice.application\\validators\\loginrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dzaba\\AppData\\Roaming\\Microsoft\\UserSecrets\\c0bba4d7-762c-485e-9a12-eefa85d29896\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|solutionrelative:authenticationmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.infrastructure\\authenticationmicroservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|solutionrelative:authenticationmicroservice.infrastructure\\authenticationmicroservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|solutionrelative:authenticationmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDE1BC07-9062-D43B-67CE-6C4310F85FEB}|AuthenticationMicroservice.Application\\AuthenticationMicroservice.Application.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.application\\validators\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDE1BC07-9062-D43B-67CE-6C4310F85FEB}|AuthenticationMicroservice.Application\\AuthenticationMicroservice.Application.csproj|solutionrelative:authenticationmicroservice.application\\validators\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E3717-69A4-4F54-B78D-C7650F9B5570}|AuthenticationMicroservice.UnitTests\\AuthenticationMicroservice.UnitTests.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.unittests\\usermappingexstensionstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E3717-69A4-4F54-B78D-C7650F9B5570}|AuthenticationMicroservice.UnitTests\\AuthenticationMicroservice.UnitTests.csproj|solutionrelative:authenticationmicroservice.unittests\\usermappingexstensionstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E3717-69A4-4F54-B78D-C7650F9B5570}|AuthenticationMicroservice.UnitTests\\AuthenticationMicroservice.UnitTests.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.unittests\\registerrequestvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E3717-69A4-4F54-B78D-C7650F9B5570}|AuthenticationMicroservice.UnitTests\\AuthenticationMicroservice.UnitTests.csproj|solutionrelative:authenticationmicroservice.unittests\\registerrequestvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.api\\middlewares\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35512A16-0C96-5287-37C7-9635B9FE48E2}|AuthenticationMicroservice.API\\AuthenticationMicroservice.API.csproj|solutionrelative:authenticationmicroservice.api\\middlewares\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|c:\\users\\dzaba\\source\\repos\\authentication-microservice\\authenticationmicroservice.infrastructure\\authentication\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B26726-4FAB-3A9D-8BAF-DCCFCFD5AFFA}|AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj|solutionrelative:authenticationmicroservice.infrastructure\\authentication\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,45 +58,106 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\Validators\\LoginRequestValidator.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Application\\Validators\\LoginRequestValidator.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\Validators\\LoginRequestValidator.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Application\\Validators\\LoginRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T18:52:53.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T18:50:29.612Z",
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\dzaba\\AppData\\Roaming\\Microsoft\\UserSecrets\\c0bba4d7-762c-485e-9a12-eefa85d29896\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\c0bba4d7-762c-485e-9a12-eefa85d29896\\secrets.json",
+              "ToolTip": "C:\\Users\\dzaba\\AppData\\Roaming\\Microsoft\\UserSecrets\\c0bba4d7-762c-485e-9a12-eefa85d29896\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\c0bba4d7-762c-485e-9a12-eefa85d29896\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-16T18:20:11.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserMappingExstensionsTest.cs",
-              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.UnitTests\\UserMappingExstensionsTest.cs",
-              "RelativeDocumentMoniker": "AuthenticationMicroservice.UnitTests\\UserMappingExstensionsTest.cs",
-              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.UnitTests\\UserMappingExstensionsTest.cs",
-              "RelativeToolTip": "AuthenticationMicroservice.UnitTests\\UserMappingExstensionsTest.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwDoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T18:43:29.302Z",
+              "Title": "AuthenticationMicroservice.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj",
+              "RelativeToolTip": "AuthenticationMicroservice.Infrastructure\\AuthenticationMicroservice.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-16T18:18:37.242Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\appsettings.json",
+              "RelativeToolTip": "AuthenticationMicroservice.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-16T18:10:55.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterRequestValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.UnitTests\\RegisterRequestValidatorTests.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.UnitTests\\RegisterRequestValidatorTests.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.UnitTests\\RegisterRequestValidatorTests.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.UnitTests\\RegisterRequestValidatorTests.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:03:25.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.Application\\Validators\\RegisterRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:00:51.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\Middlewares\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.API\\Middlewares\\GlobalExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\Middlewares\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.API\\Middlewares\\GlobalExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T17:59:22.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\Program.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.API\\Program.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.API\\Program.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T17:55:21.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JwtOptions.cs",
+              "DocumentMoniker": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Authentication\\JwtOptions.cs",
+              "RelativeDocumentMoniker": "AuthenticationMicroservice.Infrastructure\\Authentication\\JwtOptions.cs",
+              "ToolTip": "C:\\Users\\dzaba\\source\\repos\\Authentication-Microservice\\AuthenticationMicroservice.Infrastructure\\Authentication\\JwtOptions.cs",
+              "RelativeToolTip": "AuthenticationMicroservice.Infrastructure\\Authentication\\JwtOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T17:51:02.463Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -26,6 +26,7 @@ public class RegisterRequestValidatorTests
     [InlineData("nocapitol123!")]
     [InlineData("NoDigitSpecial!")]
     [InlineData("NoSpecialDigit123")]
+    [InlineData("Short1!")]
     public void Should_Fail_When_Password_Does_Not_Meet_Complexity(string weakPassword)
     {
         var model = new RegisterRequest("valid@example.com", weakPassword, "validuser");

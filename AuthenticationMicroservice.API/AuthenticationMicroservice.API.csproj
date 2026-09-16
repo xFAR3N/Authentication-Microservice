@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	  <OpenApiGenerateXmlComments>false</OpenApiGenerateXmlComments>
+	  <UserSecretsId>c0bba4d7-762c-485e-9a12-eefa85d29896</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
