@@ -77,13 +77,6 @@ namespace AuthenticationMicroservice.API.Controllers
             return Ok(response);
         }
 
-        private string? GetIpAddress()
-        {
-            if (Request.Headers.TryGetValue("X-Forwarded-For", out var forwardedFor))
-            {
-                return forwardedFor.ToString().Split(',')[0].Trim();
-            }
-            return HttpContext.Connection.RemoteIpAddress?.ToString();
-        }
+        private string? GetIpAddress() => HttpContext.Connection.RemoteIpAddress?.ToString();
     }
 }

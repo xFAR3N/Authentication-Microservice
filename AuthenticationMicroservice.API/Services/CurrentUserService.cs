@@ -1,4 +1,5 @@
-﻿using AuthenticationMicroservice.Application.Common.Interfaces;
+﻿using AuthenticationMicroservice.Application.Common.Exceptions;
+using AuthenticationMicroservice.Application.Common.Interfaces;
 using System.Security.Claims;
 
 namespace AuthenticationMicroservice.API.Services
@@ -11,7 +12,12 @@ namespace AuthenticationMicroservice.API.Services
             {
                 var userIdClaim = httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
 
-                return Guid.TryParse(userIdClaim, out var parsedGuid) ? parsedGuid : Guid.Empty;
+                if (string.IsNullOrEmpty(userIdClaim) || !Guid.TryParse(userIdClaim, out var parsedGuid))
+                {
+                    throw new UnauthorizedException("User identifier claim is missing or invalid.");
+                }
+
+                return parsedGuid;
             }
         }
 
