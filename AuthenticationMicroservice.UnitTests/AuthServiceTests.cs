@@ -100,7 +100,7 @@ public class AuthServiceTests
             u.Email == request.Email &&
             u.UserName == request.UserName &&
             u.PasswordHash == "hashed_123" &&
-            u.IsActive == true &&
+            u.IsActive &&
             u.Role == "User"), Arg.Any<CancellationToken>());
 
         await _unitOfWork.Received(1).CommitAsync(Arg.Any<CancellationToken>());

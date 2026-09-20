@@ -6,19 +6,19 @@ namespace AuthenticationMicroservice.Domain.Entities
 {
     public class RefreshToken : BaseEntity
     {
-        public string Token { get; set; } = string.Empty;
+        public string Token { get; init; } = string.Empty;
 
-        public DateTime ExpiresAtUtc { get; set; }
+        public DateTime ExpiresAtUtc { get; init; }
 
-        public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAtUtc { get; init; } = DateTime.UtcNow;
 
-        public string? CreatedByIp { get; set; }
+        public string? CreatedByIp { get; init; }
 
-        public DateTime? RevokedAtUtc { get; set; }
+        public DateTime? RevokedAtUtc { get; private set; }
 
-        public string? RevokedByIp { get; set; }
+        public string? RevokedByIp { get; private set; }
 
-        public string? ReplacedByToken { get; set; }
+        public string? ReplacedByToken { get; private set; }
 
         public bool IsExpired => DateTime.UtcNow >= ExpiresAtUtc;
 
@@ -26,7 +26,7 @@ namespace AuthenticationMicroservice.Domain.Entities
 
         public bool IsActive => !IsRevoked && !IsExpired;
 
-        public Guid UserId { get; set; }
+        public Guid UserId { get; private set; }
 
         public User User { get; set; } = null!;
     }

@@ -16,10 +16,16 @@ namespace AuthenticationMicroservice.Domain.Entities
 
         public bool IsActive { get; set; } = true;
 
-        public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAtUtc { get; init; } = DateTime.UtcNow;
 
         public DateTime? UpdatedAtUtc { get; set; }
 
         public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
+
+        public void Deactivate()
+        {
+            IsActive = false;
+            UpdatedAtUtc = DateTime.UtcNow;
+        }
     }
 }
